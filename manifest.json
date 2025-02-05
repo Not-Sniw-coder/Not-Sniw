@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Super liquid soccer",
+  "description": "Play Super liquid soccer directly in the extension",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://g.igroutka.ru/games/671/H1siLQWTVDGR9IcJ/6f9cb63e-48e3-45d6-a1ed-394adb6ba90b/index.html*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
