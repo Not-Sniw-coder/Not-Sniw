@@ -35,7 +35,7 @@ def main():
         print("Switch to the target application within 1 second...")
         time.sleep(1)
 
-        keyboard.write(" " + message)
+        keyboard.write(message)
 
     except Exception as e:
         print(f"An error occurred: {e}")
